@@ -1,0 +1,1 @@
+if #frontScreenImg:hover = #frontScreenGif display: block
