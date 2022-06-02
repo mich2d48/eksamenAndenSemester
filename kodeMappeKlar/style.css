@@ -22,6 +22,10 @@ main {
 }
 /*Burgermunu, mobilversion*/
 
+#nav-computer {
+    display: none;
+}
+
 header {
     position: fixed;
     top: 0px;
@@ -47,6 +51,7 @@ header img {
 }
 
 /*navigationsbar, dicktop*/
+
 
 /*indhold-sidderne*/
 
@@ -89,6 +94,52 @@ footer img {
 
     /*LARGESCREENS*/
     @media screen and (min-width: 1100px) {
+
+
+    /*Til styling af navigationsbar og baggrundsbillede er der brugt hjælp fra en video på youtube https://www.youtube.com/watch?v=oYRda7UtuhA*/
+    /*----styling af navigationsbar----*/
+    #nav-mobil {
+        display: none;
+    }
+
+    #nav-computer {
+        display: flex;
+        padding: 1% 3%;
+        justify-content:space-between ;
+        align-items: center ;
+    }
+
+    .nav-links {
+        flex: 1;
+        text-align:center; 
+    }   
+
+    .nav-links ul li{
+        display: inline-block;
+        padding: 5px 7px ;
+        position: center;
+    }
+
+    .nav-links ul li a{
+        color:var(--Pink);
+        text-decoration: none;
+        font-size: 17px;
+        text-transform: uppercase;
+    }
+
+    .nav-links ul li::after{
+        content:'';
+        width: 0%;
+        height: 2px;
+        background: var(--Pink);
+        display: block;
+        margin: auto;
+        transition: o,1s;
+    }
+    
+    .nav-links ul li:hover::after{
+        width: 100%;
+    }
 
       }
 
