@@ -1,0 +1,91 @@
+/*Generalt*/
+:root {
+    --Green: #b2e4bc;
+    --lightGreen: #d7eadb;
+    --darkgreen: #505644;
+    --Pink: #db2893;
+    --lightPink: #f4ecec;
+    --White:#fff;
+    --Black: #000;
+}
+
+body {
+    background-color: var(--lightGreen);
+    padding: 0;
+    margin: 0;
+    color: var(--Pink);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Burgermunu, mobilversion*/
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-image: linear-gradient(var(--Green), var(--lightGreen));
+    font-size: 25px;
+    height: 100px;
+}
+
+header h1 {
+    font-family: 'Dancing Script', cursive;
+    position: fixed;
+    top: -10px;
+    left: 50px;
+}
+
+header img {
+    position: fixed;
+    padding-top: 50px;
+    right: 50px;
+    top: -25px;
+}
+
+/*navigationsbar, dicktop*/
+
+/*indhold-sidderne*/
+
+/*index/forside*/
+
+/**/
+
+/*footer*/
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-image: linear-gradient(var(--lightGreen), var(--Green));
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    margin-top: 400px;
+
+}
+
+footer img {
+    width: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/*Startsiden, main.html*/
+
+
+
+/*Different screensize*/
+  /*COMPUTERVERSION*/
+  @media screen and (min-width: 650px) {
+
+  }
+
+    /*LARGESCREENS*/
+    @media screen and (min-width: 1100px) {
+
+      }
+
