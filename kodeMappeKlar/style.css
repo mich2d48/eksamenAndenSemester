@@ -40,15 +40,50 @@ header h1 {
     font-family: 'Dancing Script', cursive;
     position: fixed;
     top: -10px;
-    left: 50px;
+    left: 20px;
 }
+
+h2, h3{
+    text-align:  center;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+
 
 header img {
     position: fixed;
     padding-top: 50px;
-    right: 50px;
+    right: 25px;
     top: -25px;
 }
+
+.ikon a {
+    color: var(--Pink);
+}
+
+.job{
+    text-align: center;
+    margin: 12%;
+}
+
+.job p{
+    font-size: 15px;
+    line-height: 20px;
+    text-align: left;
+}
+
+.job ul li {
+    list-style: none;
+    line-height: 20px;
+    font-size: 15px;
+    margin-left: -15%;
+    text-align: left;
+}
+
+
+
+
 
 /*navigationsbar, dicktop*/
 
@@ -61,7 +96,43 @@ header img {
 
 /*footer*/
 
-footer {
+hr {
+    width: 80%;
+    border-top:1px solid var(--Pink);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.mainfooter{
+    margin-bottom: 200px;
+    text-align: center;
+}
+
+.mainfooter h4 {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+
+.mainfooter button{
+    background-color: var(--Pink);
+    border: none;
+    padding: 5px 20px 10px 20px;
+    color: var(--lightPink);
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+
+}
+
+.mainfooter button img{
+    width: 12%;
+    margin-bottom: -5px;
+    margin-left: 10px;
+}
+
+.mobilfooter {
     position: fixed;
     bottom: 0px;
     left: 0px;
@@ -74,12 +145,18 @@ footer {
 
 }
 
-footer img {
+.mobilfooter img {
     width: 35px;
     margin-left: auto;
     margin-right: auto;
 }
 
+.mainfooter ul li {
+    list-style: none;
+    line-height: 20px;
+    font-size: 15px;
+    margin-left: -15%;    
+}
 
 
 /*Startsiden, main.html*/
@@ -89,6 +166,12 @@ footer img {
 /*Different screensize*/
   /*COMPUTERVERSION*/
   @media screen and (min-width: 650px) {
+
+    .ikon a:hover {
+        color: var(--lightGreen);
+        background-color: var(--Pink);
+    
+    }
 
   }
 
