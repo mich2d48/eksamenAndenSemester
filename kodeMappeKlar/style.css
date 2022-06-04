@@ -22,10 +22,6 @@ main {
 }
 /*Burgermunu, mobilversion*/
 
-#nav-computer {
-    display: none;
-}
-
 header {
     position: fixed;
     top: 0px;
@@ -33,7 +29,7 @@ header {
     right: 0px;
     background-image: linear-gradient(var(--Green), var(--lightGreen));
     font-size: 25px;
-    height: 100px;
+    height: 100px; 
 }
 
 header h1 {
@@ -49,6 +45,49 @@ h2, h3{
     text-transform: uppercase;
 }
 
+header #navigation ul hr {
+    margin: 35px 10px;
+    width: 90%;
+}
+
+#navigation {
+    display: none;
+    background-color: var(--Pink);
+    padding: 10px;
+}
+
+#navigation ul {
+    flex: 1;
+    text-align:center; 
+}   
+
+#navigation ul li{
+    display: block;
+    padding: 5px 7px ;
+    position: center;
+}
+
+#navigation ul li a{
+    color:var(--lightGreen);
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+#blomster-hvid {
+    transform: rotate(-90deg);
+    display: block;
+    position: absolute;
+    right: -170px;
+    top: 410px;
+}
+
+#blomster-pink {
+    display: block;
+    position: absolute;
+    left: -170px;
+    top: -170px;
+}
 
 
 header img {
@@ -132,6 +171,13 @@ hr {
     margin-left: 10px;
 }
 
+.mainfooter ul li {
+    list-style: none;
+    line-height: 20px;
+    font-size: 15px;
+    margin-left: -15%;    
+}
+
 .mobilfooter {
     position: fixed;
     bottom: 0px;
@@ -151,12 +197,7 @@ hr {
     margin-right: auto;
 }
 
-.mainfooter ul li {
-    list-style: none;
-    line-height: 20px;
-    font-size: 15px;
-    margin-left: -15%;    
-}
+
 
 
 /*Startsiden, main.html*/
@@ -198,11 +239,12 @@ hr {
         text-align: center;
     }
 
-    #nav-mobil {
+  #lagkageNav, header #navigation ul hr {
         display: none;
     }
 
-    #nav-computer {
+    #navigation {
+        background-color: #b2e4bc00;
         display: flex;
         margin-top: -50px;
         padding: 1% 3%;
@@ -210,25 +252,15 @@ hr {
         align-items: center ;
     }
 
-    #nav-computer ul {
-        flex: 1;
-        text-align:center; 
-    }   
-
-    #nav-computer ul li{
+    #navigation ul li{
         display: inline-block;
-        padding: 5px 7px ;
-        position: center;
     }
 
-    #nav-computer ul li a{
-        color:var(--Pink);
-        text-decoration: none;
-        font-size: 17px;
-        text-transform: uppercase;
+    #navigation ul li a {
+        color: var(--pink);
     }
 
-    #nav-computer ul li .explore::after{
+    #navigation ul li .explore::after{
         content:'';
         width: 0%;
         height: 2px;
@@ -238,18 +270,26 @@ hr {
         transition: o,1s;
     }
     
-    #nav-computer ul li .explore:hover::after{
+    #navigation ul li .explore:hover::after{
         width: 100%;
     }
-
-    #nav-computer ul li #aktuelleside::after {
+    
+    #navigation ul li #aktuelleside::after {
         content:'';
         width: 100%;
         height: 2px;
-        background: var(--Pink);
+        background: var(--pink);
         display: block;
         margin: auto;
         transition: o,1s;
+    }
+
+    #blomster-hvid {
+        display: none;
+    }
+    
+    #blomster-pink {
+        display: none;
     }
 
     .mainfooter {
@@ -258,7 +298,6 @@ hr {
         margin-bottom: 0px;
     }
   }
-
 
     /*LARGESCREENS*/
     @media screen and (min-width: 1100px) {
@@ -269,5 +308,5 @@ hr {
    
     }
 
-}
+
 
