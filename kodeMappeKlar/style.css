@@ -175,7 +175,12 @@ hr {
         color: var(--lightGreen);
         background-color: var(--Pink);
     }
+<<<<<<< Updated upstream
     .mobilfooter {
+=======
+
+    hr {
+>>>>>>> Stashed changes
         display: none;
     }
 
