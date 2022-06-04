@@ -30,6 +30,7 @@ header {
     background-image: linear-gradient(var(--Green), var(--lightGreen));
     font-size: 25px;
     height: 100px; 
+    z-index: 0;
 }
 
 header h1 {
@@ -51,6 +52,7 @@ header #navigation ul hr {
 }
 
 #navigation {
+    z-index: 1;
     display: none;
     background-color: var(--Pink);
     padding: 10px;
@@ -59,11 +61,12 @@ header #navigation ul hr {
 #navigation ul {
     flex: 1;
     text-align:center; 
+    z-index: 2;
 }   
 
 #navigation ul li{
     display: block;
-    padding: 5px 7px ;
+    padding: 21px 7px ;
     position: center;
 }
 
@@ -72,6 +75,8 @@ header #navigation ul hr {
     text-decoration: none;
     font-size: 17px;
     text-transform: uppercase;
+    position: absolute;
+    z-index: 2;
 }
 
 #blomster-hvid {
@@ -80,6 +85,7 @@ header #navigation ul hr {
     position: absolute;
     right: -170px;
     top: 410px;
+    z-index: 1;
 }
 
 #blomster-pink {
@@ -87,6 +93,7 @@ header #navigation ul hr {
     position: absolute;
     left: -170px;
     top: -170px;
+    z-index: 1;
 }
 
 
@@ -188,7 +195,6 @@ hr {
     justify-content: center;
     height: 100px;
     margin-top: 400px;
-
 }
 
 .mobilfooter img {
@@ -254,6 +260,7 @@ hr {
 
     #navigation ul li{
         display: inline-block;
+
     }
 
     #navigation ul li a {
@@ -286,6 +293,7 @@ hr {
 
     #blomster-hvid {
         display: none;
+        z-index: -1;
     }
     
     #blomster-pink {
