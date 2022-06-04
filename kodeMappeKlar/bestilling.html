@@ -29,41 +29,116 @@
 
          <!---Til styling af navigationsbar og baggrundsbillede er der brugt hjælp fra en video på youtube https://www.youtube.com/watch?v=oYRda7UtuhA-->
 
-    <nav id="nav-computer">          
-        <div class="nav-links">
-            <ul>
-                <li><a href="index.html">Forside</a></li>
-                <li><a href="menukort/Cafe Le Jardin Menukort.pdf" target="_blank" download>Menu</a></li>
-                <li><a href="kager.html">Kager</a></li>
-                <li><a href="drinks.html">Drinks</a></li>
-                <li><a href="#">Bestilling</a></li>
-                <li><a href="omOs.html">Om os</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </div> 
-    </nav>
-
+        <nav id="nav-computer">          
+                <ul>
+                    <li><a href="index.html" class="explore">Forside</a></li>
+                    <li><a href="menukort/Cafe Le Jardin Menukort.pdf" target="_blank" download class="explore">Menu</a></li>
+                    <li><a href="kager.html" class="explore">Kager</a></li>
+                    <li><a href="drinks.html" class="explore">Drinks</a></li>
+                    <li><a href="bestilling.html" id="aktuelleside">Bestilling</a></li>
+                    <li><a href="omOs.html" class="explore">Om os</a></li>
+                    <li><a href="kontakt.html" class="explore">Kontakt</a></li>
+                </ul>
+        </nav>
     </header>
+
     <main>
         <section>
-            <h1>Bestilling</h1>
+            <h2>Bestilling</h2>
             <img src="billeder/cafeenoglena.jpg" alt="lenaogcafe" width="100%">
-
         </section>
-        <article>
 
-        </article>
-        <aside>
+        <section>
+            <form action="" method="post" id="bestilkage">
+                <fieldset>
+                    <legend>Bestilling</legend>
+                    <label for="navn">*Navn</label>
+                    <input type="text" name="navn" id="navn" required placeholder="Navn M. Efternavn" autofocus>
+                    <span>navn, mellemnavn og efternavn</span>
+                    <label for="email">*Email</label>
+                    <input type="email" id="email" name="email" required placeholder="navn@mail.com">
+                    <label for="telefon">*Telefon</label>
+                    <input type="tel" name="phone" id="telefon" required placeholder="12345678" required>
+                    <label for="andet">Andet</label>
+                    <textarea name="andet" id="andet" cols="30" rows="10"></textarea>
+                    <label for="date">*Dato</label>
+                    <input type="date" name="date" id="date" required>
+                    <label for="time">*Dato</label>
+                    <input type="time" name="time" id="time" required>
+                    <label for="color">Farve</label>
+                    <input type="color" name="color" id="color" value="#db2893">
+                    <label for="file">Inspirationsbillede</label>
+                    <input type="file" name="file" id="file" accept="image">
+                    <label for="antal">*Tal størrelse</label>
+                    <input type="range" name="range" id="antal" min="12" max="24" step="12">
+                    <label for="kager">*Variant</label>
+                    <select name="kager" id="kager" required>
+                        <option value="talkage">Talkage</option>
+                        <option value="blondiner">Blondiner</option>
+                        <option value="brunetter">Brunetter</option>
+                        <option value="tapas">Kagetapas</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>OBS</legend>
+                    <input type="checkbox" id="checkbox" name="simplecheckbox" value="checkbox er markeret" checked required> 
+                    <label for="checkbox">Du er indforstået med at bestillingen ikke er godkendt før en bekræftelses mail er modtaget. Der kan gå op til 2 arbejdsdage før du hører fra os. Din betalling trækkes først når bestillingen er godkendt.</label>
+                    <input type="checkbox" id="checkboxto" name="simplecheckbox" value="checkbox er markeret" checked required>
+                    <label for="checkboxto">Du er inforstået med at afbestilling skal ske 48 timer inden afhentning.</label>
+                    <input type="checkbox" id="checkboxtre" name="simplecheckbox" value="checkbox er markeret" checked required>
+                    <label for="checkboxtre">Jeg vil gerne skrives op til caféens nyhedsbrev.</label>
+                </fieldset>
+                <button type="submit">Næste</button>
 
-        </aside>
+            </form>
+        </section>
     </main>
 
-    <footer>
+    <footer class="mainfooter">
+        <hr>
+        <h4> Instagram</h4>   
+        <!----insta billeder mangler-->
+
+        <hr>
+        <h4> Åbningstider</h4>
+        <ul>
+            <li>Mandag lukket</li>
+            <li>Tirsdag - Fredag 10.00-17.30</li>
+            <li>Lørdag - Søndag 10.00-16.00</li>
+        </ul>
+
+        <hr>
+        <button>Kontrol Rapport <img src="./img/allPages/smiley.png " alt="smiley"></button>
+        <hr>
+
+        <h4>Kontakt</h4>
+        <ul>
+            <li>Cafe Le Jardin</li>
+            <li>Strandpassagen 4L</li>
+            <li>4600 Køge</li>
+        </ul>
+
+        <ul>
+            <li>+45 31494600</li>
+            <li>Lenathorsson@hotmail.com</li>
+        </ul>
+        
+        <!----facebook andmeldenser-->
+        <!----Maps mangler-->
+    </footer>
+
+
+    <footer class="mobilfooter">
         <img src="./img/allPages/telefon.svg" alt="ring caféen op">
         <img src="./img/allPages/location.svg" alt="find caféens lokation">
         <img src="./img/allPages/instagram.svg" alt="se cafeens instagram">
         <img src="./img/allPages/facebook.svg" alt="se caféens facebook">
     </footer>
+    
+    <script src="./main.js"></script>
+
+</body>
+</html>
     
     <script src="./main.js"></script>
 </body>
