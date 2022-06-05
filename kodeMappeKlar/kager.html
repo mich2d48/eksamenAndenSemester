@@ -53,77 +53,96 @@
             <img src="billeder/cafeenoglena.jpg" alt="lenaogcafe" width="100%">
         
             <p> Vi ser vores kager som påklædningsdukker, derfor varierer kagernes fyld, pynt og smag fra dag til dag. <br> Se dagens menu i vores Stories på Instagram eller på Facebook </p>
-            
-            <h3>KAGETAPAS</h3> 
-            <p> Nedunder kan du se vores fast kagesortiment, som kan bestilles som kagetapas. </p>
         
         </section>
         <section>
-              <!-- kode starter https://www.w3schools.com/howto/howto_js_slideshow.asp  4.juni.2022
-                Slideshow container -->
-
-             <div class="slideshow-container">
-
-             <!-- Full-width images with number and caption text -->
-             <div class="mySlides fade">
-             <div class="numbertext">1 / 7</div>
-             <img src="img/kager/cookiesandwich.jpeg" style="width:100%">
-              <div class="text">Cookiesandwich</div>
-             </div>
   
-              <div class="mySlides fade">
-              <div class="numbertext">2 / 7</div>
-              <img src="img/kager/cheesecake.jpeg" style="width:100%">
-              <div class="text">Cheesecake</div>
-             </div>
-  
-             <div class="mySlides fade">
-             <div class="numbertext">3 / 7</div>
-             <img src="img/kager/brunnettebrownie.jpeg" style="width:100%">
-             <div class="text">Brunnetter (brownie)</div>
+            <h3>KAGETAPAS</h3> 
+            
+            <!-- kode starter https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_multiple 5.juni.2022 -->
 
-             <div class="mySlides fade">
-             <div class="numbertext">4 / 7</div>
-             <img src="img/kager/flyvendejordbaertaerte.jpeg" style="width:100%">
-             <div class="text">Flyvende jordbærtærte</div>
+            <p>Nedunder kan du se vores fast kagesortiment, som kan bestilles som kagetapas.</p>
+            
+            <div class="slideshow-container">
 
-             <div class="mySlides fade">
-             <div class="numbertext">5 / 7</div>
-             <img src="img/kager/stammer.jpeg" style="width:100%">
-             <div class="text">Funky Stammer</div>
+            <div class="kagetapas">
+            <h3>Cookiesandwich</h3>
+            <img src="img/kager/cookiesandwich.jpeg" style="width:100%">
+            </div>
 
-             <div class="mySlides fade">
-             <div class="numbertext">6 / 7</div>
-             <img src="img/kager/blondiner.jpeg" style="width:100%">
-             <div class="text">Blondiner</div>
+            <div class="kagetapas">
+            <h3>Cheesecake</h3>
+            <img src="img/kager/cheesecake.jpeg" style="width:100%">
+            </div>
 
-             <div class="mySlides fade">
-             <div class="numbertext">7 / 7</div>
-             <img src="img/kager/kolonihaver.jpeg" style="width:100%">
-             <div class="text">Kolonihaver</div>
+            <div class="kagetapas">
+            <h3>Brunette (Brownie)</h3>
+            <img src="img/kager/brunnettebrownie.jpeg" style="width:100%">
+            </div>
+            
+            <div class="kagetapas">
+            <h3>Blondiner</h3>
+            <img src="img/kager/blondiner.jpeg" style="width:100%">
+            </div>
+
+            <div class="kagetapas">
+            <h3>Funky Stammer</h3>
+            <img src="img/kager/stammer.jpeg" style="width:100%">
+            </div>
+
+            <div class="kagetapas">
+            <h3>Kolonihaver</h3>
+            <img src="img/kager/kolonihaver.jpeg" style="width:100%">
+            </div>
+
+            <div class="kagetapas">
+            <h3>flyvænde jordbærtærter</h3>
+            <img src="img/kager/flyvendejordbaertaerte.jpeg" style="width:100%">
+            </div>
+
+
+             <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+             <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+
+            
+            <h3>Bestillingskager</h3>
+            <p>Vi laver festlige bestillingskager til enhver smag og anledning. Fødselsdag, bryllup, jubilæum, reception eller noget helt femte.Forkæl dig selv og dine gæster med en lækker festkage fra 
+                Café Le Jardin. </p>
+            <div class="slideshow-container">
+
+            <div class="festkager">
+               <h3>talkage</h3>
+               <img src="img/kager/talkagelyserod.jpeg" style="width:100%">
+            </div>
+
+            <div class="festkager">
+                <h3>bogstavkage</h3> 
+                <img src="img/kager/bogstavkage.jpg" style="width:100%">
+            </div>
+
+            <div class="festkager">
+                <h3>bryllupskage</h3>
+                <img src="img/kager/bryllupskage.jpg" style="width:100%" alt="bryllupskage" >
+            </div>
+
+            <div class="festkager">
+                <h3>Jubæleumskage</h3> 
+                <img src="img/kager/talkage.jpeg" style="width:100%" alt="Jubæleumskage" >
              </div>
-  
-             <!-- Next and previous buttons -->
-             <div>
-             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-             <a class="next" onclick="plusSlides(1)">&#10095;</a>
-             </div>
-             <br>
-  
-             <!-- The dots/circles -->
-             <div style="text-align:center">
-             <span class="dot" onclick="currentSlide(1)"></span> 
-             <span class="dot" onclick="currentSlide(2)"></span> 
-             <span class="dot" onclick="currentSlide(3)"></span> 
-             <span class="dot" onclick="currentSlide(4)"></span> 
-             <span class="dot" onclick="currentSlide(5)"></span> 
-             <span class="dot" onclick="currentSlide(6)"></span> 
-             <span class="dot" onclick="currentSlide(7)"></span> 
-             </div>
-             <!-- kode slutter https://www.w3schools.com/howto/howto_js_slideshow.asp  4.juni.2022 -->
+    
+            <div class="festkager">
+                <h3>fødselsdagskage</h3>
+                <img src="img/kager/fodselsdagskage.jpg" style="width:100%" alt="fødselsdagskage">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
+            
+             <!-- kode slutter https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_multiple  5.juni.2022 -->
             
         </section>
-
         
         <article>
 
