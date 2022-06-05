@@ -413,7 +413,7 @@ hr {
       border-radius: 10px;
       margin: 20px 10%;
       padding: 20px;
-      display: flex;
+      display: block;
       flex-direction: column;
   }
 
@@ -431,8 +431,9 @@ input, select, textarea {
     background-color: var(--lightPink);
 
 }
-  /*Betilling gennemført*/
-
+flexhorisontal {
+    display: inline-block;
+}
   .gennemfortP {
       margin-top: 25px;
       text-align: center;

@@ -1,0 +1,31 @@
+.ikon {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main .ikon figure {
+    display: inline-block;
+    width: 100px;
+}
+
+label {
+    display: block;
+}
+
+#bestilkage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form fieldset {
+    width: 15%;
+    display: inline-block;
+}
+
+#bestillingsbillede {
+    width: 255px;
+    display: inline-block;
+    border-bottom: 200px;
+}
