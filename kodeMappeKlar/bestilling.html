@@ -36,7 +36,7 @@
                     <hr>
                     <li><a href="drinks.html" class="explore">Drinks</a></li>
                     <hr>
-                    <li><a href="./bestilling.html" id="aktuelleside">Bestilling</a></li>
+                    <li><a href="./bestilling.html" class="aktuelleside">Bestilling</a></li>
                     <hr>
                     <li><a href="omOs.html" class="explore">Om os</a></li>
                     <hr>
@@ -57,44 +57,46 @@
             <form action="" method="post" id="bestilkage">
                 <fieldset>
                     <legend>Bestilling</legend>
-                    <label for="navn">*Navn</label>
-                    <input type="text" name="navn" id="navn" required placeholder="Navn M. Efternavn" autofocus>
-                    <span>navn, mellemnavn og efternavn</span>
-                    <label for="email">*Email</label>
-                    <input type="email" id="email" name="email" required placeholder="navn@mail.com">
-                    <label for="telefon">*Telefon</label>
-                    <input type="tel" name="phone" id="telefon" required placeholder="12345678" required>
-                    <label for="andet">Andet</label>
-                    <textarea name="andet" id="andet" cols="30" rows="10"></textarea>
-                    <label for="date">*Dato</label>
-                    <input type="date" name="date" id="date" required>
-                    <label for="time">*Dato</label>
-                    <input type="time" name="time" id="time" required>
-                    <label for="color">Farve</label>
-                    <input type="color" name="color" id="color" value="#db2893">
-                    <label for="file">Inspirationsbillede</label>
-                    <input type="file" name="file" id="file" accept="image">
-                    <label for="antal">*Tal størrelse</label>
-                    <input type="range" name="range" id="antal" min="12" max="24" step="12">
-                    <label for="kager">*Variant</label>
-                    <select name="kager" id="kager" required>
+
+                    <label for="kager">*Vælg kage:</label>
+                    <select name="kager" id="kager" required autofocus>
                         <option value="talkage">Talkage</option>
                         <option value="blondiner">Blondiner</option>
                         <option value="brunetter">Brunetter</option>
                         <option value="tapas">Kagetapas</option>
                     </select>
-                </fieldset>
-                <fieldset>
-                    <legend>OBS</legend>
-                    <input type="checkbox" id="checkbox" name="simplecheckbox" value="checkbox er markeret" checked required> 
-                    <label for="checkbox">Du er indforstået med at bestillingen ikke er godkendt før en bekræftelses mail er modtaget. Der kan gå op til 2 arbejdsdage før du hører fra os. Din betalling trækkes først når bestillingen er godkendt.</label>
-                    <input type="checkbox" id="checkboxto" name="simplecheckbox" value="checkbox er markeret" checked required>
-                    <label for="checkboxto">Du er inforstået med at afbestilling skal ske 48 timer inden afhentning.</label>
-                    <input type="checkbox" id="checkboxtre" name="simplecheckbox" value="checkbox er markeret" checked required>
-                    <label for="checkboxtre">Jeg vil gerne skrives op til caféens nyhedsbrev.</label>
-                </fieldset>
-                <button type="submit">Næste</button>
+                    
+                    <div class="flexhorisontal">
+                        <label for="tal">*Ønsket tal eller bogstav:</label>
+                        <input type="text" name="tal" id="tal" required placeholder="nummer/bogstav">
 
+                        <label for="smag">Smag:</label>
+                        <select name="smag" id="smag">
+                            <option value="karamel">Karamel</option>
+                            <option value="baer">Bær</option>
+                            <option value="chokolade">Chokolade</option>
+                            <option value="vanilje">vanilje</option>
+                        </select>
+                    </div>
+
+                    <div class="flexhorisontal">
+                        <label for="color">Farve:</label>
+                        <input type="color" name="color" id="color" value="#db2893">
+
+                        <label for="str">*Vælg størrelse (pr. symbol):</label>
+                        <select name="str" id="str" required>
+                            <option value="stor">Stor 14 personer</option>
+                            <option value="lille">Lille 8 personer</option>
+                            <option value="chokolade">Chokolade</option>
+                            <option value="vanilje">vanilje</option>
+                        </select>
+                    </div>
+
+                    <label for="andet">Andet</label>
+                    <textarea name="andet" id="andet" cols="30" rows="10"></textarea>
+                </fieldset>
+
+                <button type="button" onclick="window.location.href= './bestillingPdata.html'">Næste</button>
             </form>
         </section>
     </main>

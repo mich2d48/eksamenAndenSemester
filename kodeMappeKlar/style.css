@@ -275,11 +275,15 @@ hr {
     margin-left: 10px;
 }
 
+.mainfooter ul {
+    padding-left: 0px;
+}
+
 .mainfooter ul li {
     list-style: none;
     line-height: 20px;
-    font-size: 15px;
-    margin-left: -15%;    
+    font-size: 15px; 
+
 }
 
 .mobilfooter {
@@ -361,6 +365,7 @@ hr {
 
     #navigation ul li a {
         color: var(--pink);
+        position: relative;
     }
 
     #navigation ul li .explore::after{
@@ -377,19 +382,17 @@ hr {
         width: 100%;
     }
     
-    #navigation ul li #aktuelleside::after {
+    #navigation ul li .aktuelleside::after {
         content:'';
         width: 100%;
         height: 2px;
-        background: var(--pink);
+        background: var(--Pink);
         display: block;
         margin: auto;
-        transition: o,1s;
     }
 
     #blomster-hvid {
         display: none;
-        z-index: -1;
     }
     
     #blomster-pink {
@@ -401,6 +404,39 @@ hr {
         padding-bottom: 25px;
         margin-bottom: 0px;
     }
+  }
+
+  /*Bestillling*/
+
+  fieldset {
+      border: solid 2px var(--Pink);
+      border-radius: 10px;
+      margin: 20px 10%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+  }
+
+main section form button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    background-color: var(--Pink);
+    color: var(--lightPink);
+}
+
+input, select, textarea {
+    border: solid 1px var(--Pink);
+    background-color: var(--lightPink);
+
+}
+  /*Betilling gennemført*/
+
+  .gennemfortP {
+      margin-top: 25px;
+      text-align: center;
+      font-size: 16px;
   }
 
     /*LARGESCREENS*/
