@@ -424,7 +424,7 @@ form fieldset {
   @media screen and (min-width: 710px) {
 
     main {
-        padding-top: 160px;
+        padding-top: 5px;
     }
 
     .ikon a:hover {
@@ -433,14 +433,14 @@ form fieldset {
     }
 
     header {
-        position: absolute;
-        top: 0px;
+        position: sticky;
+        top: -110px;
         left: 0px;
         right: 0px;
         background-image: linear-gradient(var(--Green), var(--lightGreen));
         font-size: 25px;
-        height: 150px;
-        padding-top: 5PX;
+        height: 163px;
+        padding-top: 5px;
     }
     
     header h1 {
