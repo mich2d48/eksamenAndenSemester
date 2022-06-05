@@ -30,7 +30,7 @@ header {
     background-image: linear-gradient(var(--Green), var(--lightGreen));
     font-size: 25px;
     height: 100px; 
-    z-index: 0;
+    z-index: 1;
 }
 
 header h1 {
@@ -46,13 +46,17 @@ h2, h3{
     text-transform: uppercase;
 }
 
+#luk {
+    display: none;
+}
+
 header #navigation ul hr {
     margin: 35px 10px;
     width: 90%;
 }
 
 #navigation {
-    z-index: 1;
+    z-index: 2;
     display: none;
     background-color: var(--Pink);
     padding: 10px;
@@ -61,12 +65,12 @@ header #navigation ul hr {
 #navigation ul {
     flex: 1;
     text-align:center; 
-    z-index: 2;
+    z-index: 3;
 }   
 
 #navigation ul li{
     display: block;
-    padding: 21px 7px ;
+    padding: 7px 0px ;
     position: center;
 }
 
@@ -75,8 +79,8 @@ header #navigation ul hr {
     text-decoration: none;
     font-size: 17px;
     text-transform: uppercase;
-    position: absolute;
-    z-index: 2;
+    position: relative;
+    z-index: 3;
 }
 
 #blomster-hvid {
@@ -85,7 +89,7 @@ header #navigation ul hr {
     position: absolute;
     right: -170px;
     top: 410px;
-    z-index: 1;
+    z-index: 2;
 }
 
 #blomster-pink {
@@ -93,7 +97,16 @@ header #navigation ul hr {
     position: absolute;
     left: -170px;
     top: -170px;
-    z-index: 1;
+    z-index: 2;
+}
+
+h5 {
+    font-family: 'Dancing Script', cursive;
+    position: fixed;
+    color: var(--lightPink);
+    bottom: -15px;
+    left: 25px;
+    z-index: 2;
 }
 
 
@@ -296,19 +309,18 @@ hr {
     justify-content: center;
     height: 100px;
     margin-top: 400px;
+    z-index: 0;
 }
 
-.mobilfooter img {
+.mobilfooter a {
     width: 35px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 40px;
+    z-index: 0;
 }
 
-
-
 /*Startsiden, main.html*/
-
-
 
 /*Different screensize*/
   /*COMPUTERVERSION*/
@@ -321,10 +333,6 @@ hr {
     .ikon a:hover {
         color: var(--lightGreen);
         background-color: var(--Pink);
-    }
-
-    .mobilfooter {
-        display: none;
     }
 
     header {
@@ -345,7 +353,7 @@ hr {
         text-align: center;
     }
 
-  #lagkageNav, header #navigation ul hr {
+  #lagkageNav, header #navigation ul hr, h5, #blomster-hvid,  #blomster-pink, .mobilfooter {
         display: none;
     }
 
@@ -389,14 +397,6 @@ hr {
         background: var(--Pink);
         display: block;
         margin: auto;
-    }
-
-    #blomster-hvid {
-        display: none;
-    }
-    
-    #blomster-pink {
-        display: none;
     }
 
     .mainfooter {

@@ -1,10 +1,11 @@
 var lagkage = document.getElementById("navigation");
+var luk = document.getElementById("luk");
 
 function lagkageFunktion() {
     if (lagkage.style.display === "block") {
-      lagkage.style.display = "none";
+      lagkage.style.display = "none",luk.style.display = "none";
     } else {
-        lagkage.style.display = "block"
+        lagkage.style.display = "block",luk.style.display = "block";
     }
   }
 
