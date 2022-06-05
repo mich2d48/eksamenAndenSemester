@@ -9,6 +9,27 @@ function lagkageFunktion() {
     }
   }
 
+  var mobil = document.getElementById("mobil-info")
+
+  function infoFunktion() {
+    if (mobil.style.display === "block") {
+      mobil.style.display = "none";
+    } else {
+      mobil.style.display = "block",lokation.style.display = "none";
+    }
+  }
+
+  var lokation = document.getElementById("lokation")
+
+  function  adresseFunktion() {
+    if (lokation.style.display === "block") {
+      lokation.style.display = "none";
+    } else {
+      lokation.style.display = "block",mobil.style.display = "none";
+    }
+  }
+ 
+
 /* js kode på kager side starter https://www.w3schools.com/howto/howto_js_slideshow.asp  4.juni.2022 */ 
 
   let slideIndex = 1;

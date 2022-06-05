@@ -316,9 +316,36 @@ hr {
     width: 35px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
+    margin-top: 35px;
     z-index: 0;
 }
+
+#mobil-info, #lokation {
+    display: none;
+}
+
+span {
+    background-color: var(--Pink);
+    color: var(--lightPink);
+    text-decoration: none;
+    position: fixed;
+    display: block;
+    width: 100%;
+    bottom: 100px;
+    height: 50px;
+
+    text-align: center;
+}
+
+#lokation {
+    padding: 15px;
+}
+
+span a {
+    text-decoration: none;
+    color: var(--lightPink);
+}
+
 
 /*Startsiden, main.html*/
 
