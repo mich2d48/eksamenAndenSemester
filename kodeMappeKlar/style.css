@@ -17,9 +17,28 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/*Så fyldet starter under headeren*/
+
 main {
-    padding-top: 100px;
+    padding-top: 100px; 
 }
+
+/*Overskrifter*/
+
+h2, h3{
+    text-align:  center;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+/*Streger brugt gennem sidderne for at skabe en visuel opdeling*/
+hr {
+    width: 80%;
+    border-top:1px solid var(--Pink);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 /*Burgermunu, mobilversion*/
 
 header {
@@ -33,27 +52,37 @@ header {
     z-index: 1;
 }
 
+/*Logo øverst, Café Le Jardin*/
+
 header h1 {
     font-family: 'Dancing Script', cursive;
     position: fixed;
     top: -10px;
     left: 20px;
 }
+/*Lagkage/burgerbar*/
 
-h2, h3{
-    text-align:  center;
-    font-size: 22px;
-    text-transform: uppercase;
+header img {
+    position: fixed;
+    padding-top: 50px;
+    right: 25px;
+    top: -25px;
 }
+
+/*Luk kryds i mobilnavigation*/
 
 #luk {
     display: none;
 }
 
+/*Streger mellem tekst i mobilnavigationen*/
+
 header #navigation ul hr {
     margin: 35px 10px;
     width: 90%;
 }
+
+/*Burgernavigation*/
 
 #navigation {
     z-index: 2;
@@ -83,6 +112,7 @@ header #navigation ul hr {
     z-index: 3;
 }
 
+/*Blomster deco i mobilnavigationen*/
 #blomster-hvid {
     transform: rotate(-90deg);
     display: block;
@@ -100,6 +130,7 @@ header #navigation ul hr {
     z-index: 2;
 }
 
+/*Til logo i mobil navigationen*/
 h5 {
     font-family: 'Dancing Script', cursive;
     position: fixed;
@@ -109,16 +140,109 @@ h5 {
     z-index: 2;
 }
 
+/*footer*/
+.mainfooter{
+    margin-bottom: 200px;
+    text-align: center;
+}
 
-header img {
+.mainfooter h4 {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.mainfooter button{
+    background-color: var(--Pink);
+    border: none;
+    padding: 5px 20px 10px 20px;
+    color: var(--lightPink);
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+.mainfooter button img{
+    width: 12%;
+    margin-bottom: -5px;
+    margin-left: 10px;
+}
+
+.mainfooter ul {
+    padding-left: 0px;
+}
+
+.mainfooter ul li {
+    list-style: none;
+    line-height: 20px;
+    font-size: 15px; 
+
+}
+
+/*Mobilfooter*/
+.mobilfooter {
     position: fixed;
-    padding-top: 50px;
-    right: 25px;
-    top: -25px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-image: linear-gradient(var(--lightGreen), var(--Green));
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    margin-top: 400px;
+    z-index: 0;
+}
+
+.mobilfooter a {
+    width: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    z-index: 0;
+}
+
+/*Pop-up på mobil footer*/
+#mobil-info, #lokation {
+    display: none;
+}
+
+span {
+    background-color: var(--Pink);
+    color: var(--lightPink);
+    text-decoration: none;
+    position: fixed;
+    display: block;
+    width: 100%;
+    bottom: 100px;
+    height: 50px;
+    text-align: center;
+}
+
+#lokation {
+    padding: 15px;
+}
+
+span a {
+    text-decoration: none;
+    color: var(--lightPink);
+}
+
+
+/*indhold-sidderne*/
+
+/*Kontakt*/
+.ikon {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .ikon a {
     color: var(--Pink);
+}
+
+main .ikon figure {
+    display: inline-block;
+    width: 100px;
 }
 
 .job{
@@ -141,16 +265,7 @@ header img {
 }
 
 
-
-
-
-/*navigationsbar, desktop*/
-
-
-/*indhold-sidderne*/
-
-/*kager side 
-
+/*kagesiden 
 styling kode starter https://www.w3schools.com/howto/howto_js_slideshow.asp  4.juni.2022 */
 
 * {box-sizing:border-box}
@@ -245,111 +360,66 @@ styling kode starter https://www.w3schools.com/howto/howto_js_slideshow.asp  4.j
 /*  <!-- styling kode slutter https://www.w3schools.com/howto/howto_js_slideshow.asp  4.juni.2022 -->*/
 
 
-/*index/forside*/
-
-
-/**/
-
-/*footer*/
-
-hr {
-    width: 80%;
-    border-top:1px solid var(--Pink);
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-
-.mainfooter{
-    margin-bottom: 200px;
-    text-align: center;
-}
-
-.mainfooter h4 {
-    font-size: 15px;
-    text-transform: uppercase;
-}
-
-
-.mainfooter button{
-    background-color: var(--Pink);
-    border: none;
-    padding: 5px 20px 10px 20px;
-    color: var(--lightPink);
-    text-transform: uppercase;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 15px;
-
-}
-
-.mainfooter button img{
-    width: 12%;
-    margin-bottom: -5px;
-    margin-left: 10px;
-}
-
-.mainfooter ul {
-    padding-left: 0px;
-}
-
-.mainfooter ul li {
-    list-style: none;
-    line-height: 20px;
-    font-size: 15px; 
-
-}
-
-.mobilfooter {
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    background-image: linear-gradient(var(--lightGreen), var(--Green));
-    display: flex;
-    justify-content: center;
-    height: 100px;
-    margin-top: 400px;
-    z-index: 0;
-}
-
-.mobilfooter a {
-    width: 35px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 35px;
-    z-index: 0;
-}
-
-#mobil-info, #lokation {
-    display: none;
-}
-
-span {
-    background-color: var(--Pink);
-    color: var(--lightPink);
-    text-decoration: none;
-    position: fixed;
+/*Bestilllingssiden*/
+/*Wrapper bestillingen*/
+fieldset {
+    border: solid 2px var(--Pink);
+    border-radius: 10px;
+    margin: 20px 10%;
+    padding: 20px;
     display: block;
-    width: 100%;
-    bottom: 100px;
-    height: 50px;
+    flex-direction: column;
+}
 
+/*Knappen på siderne*/
+main section form button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  background-color: var(--Pink);
+  color: var(--lightPink);
+}
+
+/*Styling til indholdet i bestillings formularen*/
+input, select, textarea {
+  border: solid 1px var(--Pink);
+  background-color: var(--lightPink);
+}
+
+/*styling af p på gennemførtsiden*/
+.gennemfortP {
+    margin-top: 25px;
     text-align: center;
+    font-size: 16px;
 }
 
-#lokation {
-    padding: 15px;
-}
-
-span a {
-    text-decoration: none;
-    color: var(--lightPink);
+/*labelelementerne*/
+label {
+  display: block;
 }
 
 
-/*Startsiden, main.html*/
+#bestilkage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-/*Different screensize*/
+form fieldset {
+  width: 15%;
+  display: inline-block;
+}
+
+#bestillingsbillede {
+  width: 255px;
+  display: inline-block;
+  border-bottom: 200px;
+}
+
+
+/*forskellige skrærmstørrelser*/
+
   /*COMPUTERVERSION*/
   @media screen and (min-width: 710px) {
 
@@ -432,49 +502,6 @@ span a {
         margin-bottom: 0px;
     }
   }
-
-  /*Bestillling*/
-
-  fieldset {
-      border: solid 2px var(--Pink);
-      border-radius: 10px;
-      margin: 20px 10%;
-      padding: 20px;
-      display: block;
-      flex-direction: column;
-  }
-
-main section form button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: none;
-    background-color: var(--Pink);
-    color: var(--lightPink);
-}
-
-input, select, textarea {
-    border: solid 1px var(--Pink);
-    background-color: var(--lightPink);
-
-}
-flexhorisontal {
-    display: inline-block;
-}
-  .gennemfortP {
-      margin-top: 25px;
-      text-align: center;
-      font-size: 16px;
-  }
-
-    /*LARGESCREENS*/
-    @media screen and (min-width: 1100px) {
-
-
-    /*Til styling af navigationsbar og baggrundsbillede er der brugt hjælp fra en video på youtube https://www.youtube.com/watch?v=oYRda7UtuhA*/
-    /*----styling af navigationsbar----*/
-   
-    }
 
 
 
