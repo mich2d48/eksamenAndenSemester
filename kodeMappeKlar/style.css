@@ -151,7 +151,7 @@ h5 {
     text-transform: uppercase;
 }
 
-.mainfooter button{
+button{
     background-color: var(--Pink);
     border: none;
     padding: 5px 20px 10px 20px;
@@ -159,6 +159,8 @@ h5 {
     text-transform: uppercase;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 15px;
+    display: block;
+    margin: 20px auto;
 }
 
 .mainfooter button img{
@@ -176,6 +178,10 @@ h5 {
     line-height: 20px;
     font-size: 15px; 
 
+}
+
+ #maps {
+    width: 400px;
 }
 
 /*Mobilfooter*/
@@ -480,13 +486,42 @@ form fieldset {
         width: 400px;
         left: -130px;
         top: -188px;
-        width: ;
     }
 
     .mainfooter {
         background-image: linear-gradient(var(--lightGreen), var(--Green));
         padding-bottom: 25px;
         margin-bottom: 0px;
+        text-align:unset;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainfooter hr {
+        display: none;
+    }
+
+    .mainfooter nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mainfooter nav ul li {
+        margin: auto;
+    }
+
+    .footerrow {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .flexbokse {
+        width: 22%;
+        margin: 5px auto;
+    }
+
+    .flexbokse button,  .flexbokse img{
+        max-width: 90%;
     }
 
     .job{
@@ -513,6 +548,7 @@ form fieldset {
         margin-top: 60px;
         margin-left: 20px;
     }
+
   }
 
 
