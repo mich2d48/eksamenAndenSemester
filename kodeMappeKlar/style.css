@@ -234,10 +234,16 @@ span a {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
 }
 
 .ikon a {
     color: var(--Pink);
+}
+
+#telefonIkon {
+    position: relative;
+    top: -32px;
 }
 
 main .ikon figure {
@@ -247,7 +253,9 @@ main .ikon figure {
 
 .job{
     text-align: center;
-    margin: 12%;
+    margin: 10px 12%;
+    border: solid 2px var(--Pink);
+    padding: 15px;
 }
 
 .job p{
@@ -260,10 +268,12 @@ main .ikon figure {
     list-style: none;
     line-height: 20px;
     font-size: 15px;
-    margin-left: -15%;
     text-align: left;
 }
 
+.job img {
+    width: 80%;
+}
 
 /*kagesiden 
 
@@ -310,6 +320,9 @@ img {vertical-align: middle;}
 
 /*  <!-- styling kode slutter https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_multiple 5.juni.2022 -->*/
 
+.kagetekst {
+    margin: 30px 10%;
+}
 
 /*Bestilllingssiden*/
 /*Wrapper bestillingen*/
@@ -385,13 +398,14 @@ form fieldset {
 
     header {
         position: sticky;
-        top: -110px;
+        top: -115px;
         left: 0px;
         right: 0px;
         background-image: linear-gradient(var(--Green), var(--lightGreen));
         font-size: 25px;
-        height: 163px;
+        height: 165px;
         padding-top: 5px;
+        overflow: hidden;
     }
     
     header h1 {
@@ -399,9 +413,18 @@ form fieldset {
         display: block;
         position: relative;
         text-align: center;
+        z-index: 3;
     }
 
-  #lagkageNav, header #navigation ul hr, h5, #blomster-hvid,  #blomster-pink, .mobilfooter {
+    #navigation ul li {
+        margin: 0px 8px;
+    }
+
+    #navigation ul li a{
+        font-size: 16px;
+    }
+
+  #lagkageNav, header #navigation ul hr, h5, .mobilfooter {
         display: none;
     }
 
@@ -447,10 +470,48 @@ form fieldset {
         margin: auto;
     }
 
+    #blomster-hvid {
+        transform: rotate(-14deg);
+        right: -242px;
+        top: -250px;
+    }
+    
+    #blomster-pink {
+        width: 400px;
+        left: -130px;
+        top: -188px;
+        width: ;
+    }
+
     .mainfooter {
         background-image: linear-gradient(var(--lightGreen), var(--Green));
         padding-bottom: 25px;
         margin-bottom: 0px;
+    }
+
+    .job{
+        margin: 10px 5%;
+        border: solid 2px var(--Pink);
+        padding: 10px;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .job h4 {
+        position: absolute;
+        margin-left: 45%;
+    }
+
+    .job img {
+        max-width:  500px;
+        margin-top: 70px;
+    }
+
+    .jobtekst {
+        width: 50%;
+        margin-top: 60px;
+        margin-left: 20px;
     }
   }
 
