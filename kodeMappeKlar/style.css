@@ -340,6 +340,7 @@ fieldset {
     border: solid 2px var(--Pink);
     padding: 20px;
     width: 60%;
+    max-width: 600px;
     display: block;
     margin: 40px auto;
 }
@@ -368,6 +369,11 @@ label {
 .flexcheck {
     display: flex;
     flex-direction: row;
+}
+
+.flexcheck label {
+    display: block;
+    width: 90%;
 }
 
 .checkbox {
@@ -417,7 +423,7 @@ label {
         font-size: 16px;
     }
 
-  #lagkageNav, header #navigation ul hr, h5, .mobilfooter {
+    #lagkageNav, header #navigation ul hr, h5, .mobilfooter {
         display: none;
     }
 
@@ -512,28 +518,23 @@ label {
     }
 
     .job{
-        margin: 10px 5%;
+        margin: 10px auto;
         border: solid 2px var(--Pink);
         padding: 10px;
-        text-align: left;
-        display: flex;
-        flex-direction: row;
+        max-width: 500px;
     }
-    
-    .job h4 {
-        position: absolute;
-        margin-left: 45%;
+
+    h4 {
+        font-size: 20px;
     }
 
     .job img {
-        max-width:  500px;
-        margin-top: 70px;
+        width:  70%;
     }
 
     .jobtekst {
-        width: 50%;
-        margin-top: 60px;
-        margin-left: 20px;
+        width: 94%;
+        margin: 30px auto;
     }
 
   }
