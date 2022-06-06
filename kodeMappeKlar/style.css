@@ -18,13 +18,12 @@ body {
 }
 
 /*Så fyldet starter under headeren*/
-
 main {
     padding-top: 100px; 
+    overflow: hidden;
 }
 
 /*Overskrifter*/
-
 h2, h3{
     text-align:  center;
     font-size: 22px;
@@ -39,8 +38,20 @@ hr {
     margin-bottom: 50px;
 }
 
-/*Burgermunu, mobilversion*/
+/*knap kode*/
+button{
+    background-color: var(--Pink);
+    border: none;
+    padding: 10px 20px 10px 20px;
+    color: var(--lightPink);
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    display: block;
+    margin: 20px auto;
+}
 
+/*Burgermunu, mobilversion*/
 header {
     position: fixed;
     top: 0px;
@@ -53,15 +64,14 @@ header {
 }
 
 /*Logo øverst, Café Le Jardin*/
-
 header h1 {
     font-family: 'Dancing Script', cursive;
     position: fixed;
     top: -10px;
     left: 20px;
 }
-/*Lagkage/burgerbar*/
 
+/*Lagkage/burgerbar*/
 header img {
     position: fixed;
     padding-top: 50px;
@@ -70,25 +80,23 @@ header img {
 }
 
 /*Luk kryds i mobilnavigation*/
-
 #luk {
     display: none;
 }
 
 /*Streger mellem tekst i mobilnavigationen*/
-
 header #navigation ul hr {
     margin: 35px 10px;
     width: 90%;
 }
 
 /*Burgernavigation*/
-
 #navigation {
     z-index: 2;
     display: none;
     background-color: var(--Pink);
     padding: 10px;
+    padding-bottom: 150px;
 }
 
 #navigation ul {
@@ -106,10 +114,12 @@ header #navigation ul hr {
 #navigation ul li a{
     color:var(--lightGreen);
     text-decoration: none;
-    font-size: 17px;
+    font-size: 24px;
     text-transform: uppercase;
     position: relative;
     z-index: 3;
+    text-decoration: border;
+    -webkit-text-stroke: 0.6px var(--Pink);
 }
 
 /*Blomster deco i mobilnavigationen*/
@@ -117,17 +127,19 @@ header #navigation ul hr {
     transform: rotate(-90deg);
     display: block;
     position: absolute;
-    right: -170px;
-    top: 410px;
+    right: -140px;
+    top: 530px;
     z-index: 2;
+    width: 400px;
 }
 
 #blomster-pink {
     display: block;
     position: absolute;
-    left: -170px;
-    top: -170px;
+    left: -148px;
+    top: -135px;
     z-index: 2;
+    width: 400px;
 }
 
 /*Til logo i mobil navigationen*/
@@ -140,35 +152,21 @@ h5 {
     z-index: 2;
 }
 
-/*footer*/
+/*mainfooter*/
 .mainfooter{
     margin-bottom: 200px;
     text-align: center;
 }
 
+/*overskrifter i footeren*/
 .mainfooter h4 {
     font-size: 15px;
     text-transform: uppercase;
 }
 
-button{
-    background-color: var(--Pink);
-    border: none;
-    padding: 10px 20px 10px 20px;
-    color: var(--lightPink);
-    text-transform: uppercase;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 15px;
-    display: block;
-    margin: 20px auto;
-}
-
-button img {
-    margin-top: -8px;
-}
-
 .mainfooter button img{
     width: 12%;
+    margin-top: -8px;
     margin-bottom: -5px;
     margin-left: 10px;
 }
@@ -236,8 +234,16 @@ span a {
     color: var(--lightPink);
 }
 
-
 /*indhold-sidderne*/
+/*index*/
+/*Blomster på forsiden*/
+#roser-red {
+    display: none;
+}
+
+#roser-right {
+    display: none;
+}
 
 /*Kontakt*/
 .ikon {
@@ -258,9 +264,10 @@ span a {
 
 main .ikon figure {
     display: inline-block;
-    width: 100px;
+    width: 110px;
 }
 
+/*jobanonncer*/
 .job{
     text-align: center;
     margin: 10px 12%;
@@ -286,7 +293,6 @@ main .ikon figure {
 }
 
 /*kagesiden 
-
 styling kode starter https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_multiple 5.juni.2022 */
 
 * {box-sizing: border-box}
@@ -366,6 +372,7 @@ label {
     font-size: 16px;
 }
 
+/*styling af checkbokse i bestilling*/
 .flexcheck {
     display: flex;
     flex-direction: row;
@@ -382,6 +389,12 @@ label {
 }
 
 /*forskellige skrærmstørrelser*/
+    /*Små skærme*/
+    @media screen and (max-width: 350px) {
+        h1 {
+            font-size: 40px;
+        }
+    }
 
   /*COMPUTERVERSION*/
   @media screen and (min-width: 710px) {
@@ -390,11 +403,12 @@ label {
         padding-top: 5px;
     }
 
-    .ikon a:hover {
-        color: var(--lightGreen);
-        background-color: var(--Pink);
+    /*ting der ikke skal vises på denne skærm*/
+    #lagkageNav, header #navigation ul hr, h5, .mobilfooter {
+        display: none;
     }
 
+    /*header starter*/
     header {
         position: sticky;
         top: -115px;
@@ -408,23 +422,20 @@ label {
     }
     
     header h1 {
-        font-family: 'Dancing Script', cursive;
-        display: block;
         position: relative;
         text-align: center;
         z-index: 3;
     }
 
+    /*Navigation starter*/
+    /*Til styling af navigationsbar er der brugt hjælp fra en video på youtube https://www.youtube.com/watch?v=oYRda7UtuhA*/
+    /*Vi har dog lavet en del modificering af koden, så den passer ind i vores projekts*/
     #navigation ul li {
         margin: 0px 8px;
     }
 
     #navigation ul li a{
         font-size: 16px;
-    }
-
-    #lagkageNav, header #navigation ul hr, h5, .mobilfooter {
-        display: none;
     }
 
     #navigation {
@@ -469,10 +480,12 @@ label {
         margin: auto;
     }
 
+    /*Blomster navbar*/
     #blomster-hvid {
         transform: rotate(-14deg);
         right: -242px;
         top: -250px;
+        width: 500px;
     }
     
     #blomster-pink {
@@ -481,6 +494,7 @@ label {
         top: -188px;
     }
 
+    /*footer computer*/
     .mainfooter {
         background-image: linear-gradient(var(--lightGreen), var(--Green));
         padding-bottom: 25px;
@@ -503,6 +517,14 @@ label {
         margin: auto;
     }
 
+    footer button {
+        margin-left: 0px;
+    }
+
+    #forside-mainfooter {
+        margin-top: -340px;
+    }
+
     .footerrow {
         display: flex;
         flex-direction: row;
@@ -517,6 +539,7 @@ label {
         max-width: 90%;
     }
 
+    /*Jobopslag kontaktsiden*/
     .job{
         margin: 10px auto;
         border: solid 2px var(--Pink);
@@ -535,6 +558,26 @@ label {
     .jobtekst {
         width: 94%;
         margin: 30px auto;
+    }
+
+    /*Blomster på forsiden*/
+    #roser-red {
+    position: relative;
+    display: block;
+    width: 220px;
+    transform: rotate(45deg);
+    left: -70px;
+    top: -70px;
+    }
+
+    #roser-right {
+    position: relative;
+    display: block;
+    width: 220px;
+    float: right;
+    right: -70px;
+    top: -280px;
+    transform: scaleX(-1) rotate(45deg);
     }
 
   }

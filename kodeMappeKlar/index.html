@@ -12,10 +12,10 @@
     <meta property="og:image:alt" content="Lena servere kage, klik for at besøge Café Le Jardin"> <!--Alt tekst til billede vist på facebook deling-->
     <meta name="description" content="Café Le Jardin, en lille hyggelig cafè i hjertet af Køge der specialisere sig i unikke kager serveret med god kaffe og lækre drinks."> <!--beskrivelse af indholdet, vises på google-->
     <meta name="keywords" content="bedste bager, bedste konditor, bagedysten, Lena, bedste cafe i køge, kager, cafè, drinks, kaffe, Køge, brunch, fødselsdagskage, konfirmationskage, bryllupskage"> <!--søgeord-->
-    <meta name="author" content="Michala Pedersen"> <!--forfatter af indholdet-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <meta name="author" content="Michala Pedersen"> <!--Hovedforfatter af indholdet-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!--fonten vi bruger i logoet/h1-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--fonten vi bruger i logoet/h1-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"><!--fonten vi bruger i logoet/h1-->
     <title>Velkommen - Café Le Jarden</title> <!--sidens titel, vises i fanen ikke indholdet-->
     <link rel="shortcut icon" href="./img/allPages/lagkagebar.svg">
     <link rel="stylesheet" href="./style.css">
@@ -27,6 +27,7 @@
         <a href="javascript:void(0);" onclick="lagkageFunktion()"><img src="./img/allPages/kryds.svg" alt="Luk windue knap" id="luk"></a>
         
          <!---Til styling af navigationsbar er der brugt hjælp fra en video på youtube https://www.youtube.com/watch?v=oYRda7UtuhA-->
+         <!--Vi har dog lavet en del modificering af koden*/-->
         <nav id="navigation">  
                 <ul>
                     <li><a href="index.html" class="aktuelleside">Forside</a></li>
@@ -48,16 +49,20 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section><!--overskrift og banner-->
             <h2>Velkommen</h2>
             <img src="./img/forside/cafeenoglena.jpg" alt="lenaogcafe" width="100%">
         </section>
+        <section> <!--Blomterpynt på siden-->
+            <img src="./img/allPages/blomster/blomsterpink.png" alt="3 røde roser" id="roser-red">
+            <img src="./img/allPages/blomster/blomsterpink.png" alt="3 røde roser" id="roser-right">
+        </section>
     </main>
 
-    <footer class="mainfooter">
+    <!--mainfooter starter-->
+    <footer class="mainfooter" id="forside-mainfooter">
         <div class="footerrow">
             <div class="flexbokse">
-                <hr>
                 <h4> Åbningstider</h4>
                 <ul>
                     <li>Mandag lukket</li>
@@ -72,7 +77,7 @@
 
             <div class="flexbokse">
                 <h4> Instagram</h4>   
-                <!----insta billeder mangler-->
+                <!--Rigtige insta billeder mangler-->
                 <!--Installer instagram feed her. Lena skal godkende Instagram Access Token, se: https://www.youtube.com/watch?v=0XQ3lLy3ymM&t=208s. Find koden her: https://github.com/ishithemes/instafeed_website/blob/master/index.html.-->
 
                 <img src="./img/allPages/instagramPosts.svg" alt="et dummi billede af instagram posts">
@@ -81,7 +86,7 @@
             </div>
 
             <div class="flexbokse">
-                <!----facebook andmeldenser-->
+                <!--Rigtige facebook andmeldenser mangler-->
                 <!--Lena skal give os adgang til at logge ind på developer facebook, følg denne vejledning, https://www.signpost.com/blog/embed-facebook-reviews/-->
                 <h4>Facebook anmeldelser</h4>
                 <img src="./img/allPages/facebookreviews.svg" alt="dummi billede facebook reviews">
@@ -117,6 +122,7 @@
         </nav>
     </footer>
 
+    <!--mobilfooter starter-->
     <footer class="mobilfooter">
         <a href="javascript:void(0);" onclick="infoFunktion()"><img src="./img/allPages/telefon.svg" alt="ring caféen op"></a>
         <span id="mobil-info">
