@@ -154,13 +154,17 @@ h5 {
 button{
     background-color: var(--Pink);
     border: none;
-    padding: 5px 20px 10px 20px;
+    padding: 10px 20px 10px 20px;
     color: var(--lightPink);
     text-transform: uppercase;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 15px;
     display: block;
     margin: 20px auto;
+}
+
+button img {
+    margin-top: -8px;
 }
 
 .mainfooter button img{
@@ -334,27 +338,24 @@ img {vertical-align: middle;}
 /*Wrapper bestillingen*/
 fieldset {
     border: solid 2px var(--Pink);
-    border-radius: 10px;
-    margin: 20px 10%;
     padding: 20px;
+    width: 60%;
     display: block;
-    flex-direction: column;
-}
-
-/*Knappen på siderne*/
-main section form button {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: none;
-  background-color: var(--Pink);
-  color: var(--lightPink);
+    margin: 40px auto;
 }
 
 /*Styling til indholdet i bestillings formularen*/
 input, select, textarea {
   border: solid 1px var(--Pink);
   background-color: var(--lightPink);
+  width: 100%;
+  min-height: 40px;
+  font-size: 15px;
+}
+
+label {
+    display: block;
+    margin: 10px 0px 4px 0px;
 }
 
 /*styling af p på gennemførtsiden*/
@@ -364,29 +365,15 @@ input, select, textarea {
     font-size: 16px;
 }
 
-/*labelelementerne*/
-label {
-  display: block;
+.flexcheck {
+    display: flex;
+    flex-direction: row;
 }
 
-
-#bestilkage {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.checkbox {
+    width: 18px;
+    margin-right: 40px;
 }
-
-form fieldset {
-  width: 15%;
-  display: inline-block;
-}
-
-#bestillingsbillede {
-  width: 255px;
-  display: inline-block;
-  border-bottom: 200px;
-}
-
 
 /*forskellige skrærmstørrelser*/
 

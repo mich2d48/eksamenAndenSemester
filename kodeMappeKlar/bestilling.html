@@ -56,7 +56,7 @@
         </section>
 
         <section>
-            <form action="" method="post" id="bestilkage">
+            <form action="" method="post">
                 <fieldset>
                     <legend>Bestilling</legend>
 
@@ -68,36 +68,29 @@
                         <option value="tapas">Kagetapas</option>
                     </select>
                     
-                    <div class="flexhorisontal">
-                        <label for="tal">*Ønsket tal eller bogstav:</label>
-                        <input type="text" name="tal" id="tal" required placeholder="nummer/bogstav">
+                    <label for="tal">*Ønsket tal eller bogstav:</label>
+                    <input type="text" name="tal" id="tal" required placeholder="nummer/bogstav">
 
-                        <label for="smag">Smag:</label>
-                        <select name="smag" id="smag">
-                            <option value="karamel">Karamel</option>
-                            <option value="baer">Bær</option>
-                            <option value="chokolade">Chokolade</option>
-                            <option value="vanilje">vanilje</option>
-                        </select>
-                    </div>
+                    <label for="smag">Smag:</label>
+                    <select name="smag" id="smag">
+                        <option value="karamel">Karamel</option>
+                        <option value="baer">Bær</option>
+                        <option value="chokolade">Chokolade</option>
+                        <option value="vanilje">vanilje</option>
+                    </select>
 
-                    <div class="flexhorisontal">
-                        <label for="color">Farve:</label>
-                        <input type="color" name="color" id="color" value="#db2893">
+                    <label for="color">Farve:</label>
+                    <input type="color" name="color" id="color" value="#db2893">
 
-                        <label for="str">*Vælg størrelse (pr. symbol):</label>
-                        <select name="str" id="str" required>
-                            <option value="stor">Stor 14 personer</option>
-                            <option value="lille">Lille 8 personer</option>
-                            <option value="chokolade">Chokolade</option>
-                            <option value="vanilje">vanilje</option>
-                        </select>
-                    </div>
+                    <label for="str">*Vælg størrelse (pr. symbol):</label>
+                    <select name="str" id="str" required>
+                        <option value="stor">Stor 14 personer</option>
+                        <option value="lille">Lille 8 personer</option>
+                    </select>
 
-                    <label for="andet">Andet</label>
+                    <label for="andet">Andet:</label>
                     <textarea name="andet" id="andet" cols="30" rows="10"></textarea>
                 </fieldset>
-                <img src="./billeder/job.jpg" alt="stemningsbillede" id="bestillingsbillede">
 
                 <button type="button" onclick="window.location.href= './bestillingPdata.html'">Næste</button>
             </form>
@@ -149,7 +142,8 @@
                     <li>+45 31494600</li>
                     <li>Lenathorsson@hotmail.com</li>
                 </ul>
-                                 <!----Maps mangler-->
+                <hr>
+                <!----Maps mangler-->
                 <!--Skal Laves i samarbejde med Lena, se vejledning https://www.youtube.com/watch?v=pL7_hCbwTHo-->
                 <h4>Google Maps</h4>
                 <img src="./img/allPages/maps.png" alt="dummi billede google maps position" id="maps">
@@ -157,7 +151,6 @@
                 
             </div>
         </div>
-        <hr>
         <nav>
             <ul>
                 <li>Persondatapolitik</li>
@@ -180,11 +173,6 @@
         <a href="https://www.instagram.com/cafelejardin.dk/" target="_blank"><img src="./img/allPages/instagram.svg" alt="se cafeens instagram"></a>
         <a href="https://www.facebook.com/cafelejardin.dk/" target="_blank"><img src="./img/allPages/facebook.svg" alt="se caféens facebook"></a>
     </footer>
-    
-    <script src="./main.js"></script>
-
-</body>
-</html>
     
     <script src="./main.js"></script>
 </body>

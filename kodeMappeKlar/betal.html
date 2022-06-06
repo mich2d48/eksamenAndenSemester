@@ -54,26 +54,40 @@
         </section>
         
         <section>
-            <form action="" method="post" id="bestilkage">
+            <form action="" method="post">
                 <fieldset>
                     <legend>Betalingsmetode</legend>
-                    <input type="radio" id="radioet" value="1" name="simplecheckbox" value="checkbox er markeret" checked required> 
-                    <label for="radioet">MobilePay</label>
-                    <input type="radio" id="radioto" value="1" name="simplecheckbox" value="checkbox er markeret" checked required>
-                    <label for="radioto">PayPal</label>
-                    <input type="radio" id="radiotre" value="1" name="simplecheckbox" value="checkbox er markeret" checked required>
-                    <label for="radiotre">ApplePay</label>
-                    <input type="radio" id="radiofire" value="1" name="simplecheckbox" value="checkbox er markeret" checked required>
-                    <label for="radiofire">VISA</label>
+                    <div class="flexcheck">
+                        <input type="radio" id="radioet" class="checkbox" value="1" name="simplecheckbox" value="checkbox er markeret" checked required> 
+                        <label for="radioet">MobilePay</label>
+                    </div>
+                    <div class="flexcheck">
+                        <input type="radio" id="radioto" class="checkbox" value="1" name="simplecheckbox" value="checkbox er markeret" checked required>
+                        <label for="radioto">PayPal</label>
+                    </div>
+                    <div class="flexcheck">
+                        <input type="radio" id="radiotre" class="checkbox" value="1" name="simplecheckbox" value="checkbox er markeret" checked required>
+                        <label for="radiotre">ApplePay</label>
+                    </div>
+                    <div class="flexcheck">
+                        <input type="radio" id="radiofire" class="checkbox" value="1" name="simplecheckbox" value="checkbox er markeret" checked required>
+                        <label for="radiofire">VISA</label>
+                    </div>
                 </fieldset>
                 <fieldset>
                     <legend>OBS</legend>
-                    <input type="checkbox" id="checkbox" name="simplecheckbox" value="checkbox er markeret" checked required> 
-                    <label for="checkbox">Du er indforstået med at bestillingen ikke er godkendt før en bekræftelses mail er modtaget. Der kan gå op til 2 arbejdsdage før du hører fra os. Din betalling trækkes først når bestillingen er godkendt.</label>
-                    <input type="checkbox" id="checkboxto" name="simplecheckbox" value="checkbox er markeret" checked required>
-                    <label for="checkboxto">Du er inforstået med at afbestilling skal ske 48 timer inden afhentning.</label>
-                    <input type="checkbox" id="checkboxtre" name="simplecheckbox" value="checkbox er markeret" checked>
-                    <label for="checkboxtre">Jeg vil gerne skrives op til caféens nyhedsbrev.</label>
+                    <div class="flexcheck">
+                        <input type="checkbox" id="checkbox" class="checkbox" name="simplecheckbox" value="checkbox er markeret" checked required> 
+                        <label for="checkbox">Du er indforstået med at bestillingen ikke er godkendt før en bekræftelses mail er modtaget. Der kan gå op til 2 arbejdsdage før du hører fra os. Din betalling trækkes først når bestillingen er godkendt.</label>
+                    </div>
+                    <div class="flexcheck">
+                        <input type="checkbox" id="checkboxto" class="checkbox" name="simplecheckbox" value="checkbox er markeret" checked required>
+                        <label for="checkboxto">Du er inforstået med at afbestilling skal ske 48 timer inden afhentning.</label>
+                    </div>
+                    <div class="flexcheck">
+                        <input type="checkbox" id="checkboxtre" class="checkbox" name="simplecheckbox" value="checkbox er markeret" checked>
+                        <label for="checkboxtre">Jeg vil gerne skrives op til caféens nyhedsbrev.</label>
+                    </div>
                 </fieldset>
                 <button type="button" onclick="window.location.href= './bestillingGennemfort.html'">Gennemført</button>
             </form>
@@ -126,6 +140,7 @@
                     <li>+45 31494600</li>
                     <li>Lenathorsson@hotmail.com</li>
                 </ul>
+                <hr>
                                  <!----Maps mangler-->
                 <!--Skal Laves i samarbejde med Lena, se vejledning https://www.youtube.com/watch?v=pL7_hCbwTHo-->
                 <h4>Google Maps</h4>
@@ -134,7 +149,7 @@
                 
             </div>
         </div>
-        <hr>
+
         <nav>
             <ul>
                 <li>Persondatapolitik</li>
@@ -159,9 +174,5 @@
     
     <script src="./main.js"></script>
 
-</body>
-</html>
-    
-    <script src="./main.js"></script>
 </body>
 </html>
