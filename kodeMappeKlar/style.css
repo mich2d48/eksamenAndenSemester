@@ -51,6 +51,10 @@ button{
     margin: 20px auto;
 }
 
+#banner {
+    width: 100%;
+}
+
 /*Burgermunu, mobilversion*/
 header {
     position: fixed;
@@ -84,12 +88,6 @@ header img {
     display: none;
 }
 
-/*Streger mellem tekst i mobilnavigationen*/
-header #navigation ul hr {
-    margin: 35px 10px;
-    width: 90%;
-}
-
 /*Burgernavigation*/
 #navigation {
     z-index: 2;
@@ -108,7 +106,11 @@ header #navigation ul hr {
 #navigation ul li{
     display: block;
     padding: 7px 0px ;
-    position: center;
+    border-bottom: solid 1px var(--lightPink);
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-right: 35px;
 }
 
 #navigation ul li a{
@@ -118,7 +120,6 @@ header #navigation ul hr {
     text-transform: uppercase;
     position: relative;
     z-index: 3;
-    text-decoration: border;
     -webkit-text-stroke: 0.6px var(--Pink);
 }
 
@@ -149,7 +150,7 @@ h5 {
     color: var(--lightPink);
     bottom: -15px;
     left: 25px;
-    z-index: 2;
+    z-index: 3;
 }
 
 /*mainfooter*/
@@ -211,6 +212,7 @@ h5 {
 /*Pop-up på mobil footer*/
 #mobil-info, #lokation {
     display: none;
+    padding: 15px;
 }
 
 span {
@@ -223,10 +225,6 @@ span {
     bottom: 100px;
     height: 50px;
     text-align: center;
-}
-
-#lokation {
-    padding: 15px;
 }
 
 span a {
@@ -449,7 +447,9 @@ label {
 
     #navigation ul li{
         display: inline-block;
-
+        padding-bottom: 0px;
+        padding-top: 0px;
+        margin-right: 0px;
     }
 
     #navigation ul li a {

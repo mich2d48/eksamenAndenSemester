@@ -4,7 +4,7 @@
     <meta charset="UTF-8"> <!--Alfabet meta tag-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!---->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height"> <!--højde, breede og skalering på indhold-->
-    <meta name="theme-color" content="#E1306C"> <!--farve på browseren, mobil-->
+    <meta name="theme-color" content="#db2893"> <!--farve på browseren, mobil-->
     <meta property="og:title" content="Café Le Jardin"> <!--Overskrift vist på deling på fb-->
     <meta property="og:type" content="website"> <!--fortæller facebook at det er  en webside-->
     <meta property="og:url" content="https://www.cafelejardin.dk"> <!--Fortæller facebook hvilken side der skal linkes til-->
@@ -29,23 +29,18 @@
         
          <!---Til styling af navigationsbar er der brugt hjælp fra en video på youtube https://www.youtube.com/watch?v=oYRda7UtuhA-->
         <nav id="navigation">  
-                <ul>
-                    <li><a href="index.html" class="explore">Forside</a></li>
-                    <hr>
-                    <li><a href="menukort/Cafe Le Jardin Menukort.pdf" target="_blank" download class="explore">Menu</a></li>
-                    <hr>
-                    <li><a href="kager.html" class="explore">Kager</a></li>
-                    <hr>
-                    <li><a href="drinks.html" class="aktuelleside">Drinks</a></li>
-                    <hr>
-                    <li><a href="./bestilling.html" class="explore">Bestilling</a></li>
-                    <hr>
-                    <li><a href="omOs.html" class="explore">Om os</a></li>
-                    <hr>
-                    <li><a href="kontakt.html" class="explore">Kontakt</a></li>
-                </ul>
+            <ul>
+                <li><a href="index.html" class="explore">Forside</a></li>
+                <li><a href="./img/menukort/cafeLeJardinMenkort.pdf" target="_blank" class="explore">Menu</a></li>
+                <li><a href="kager.html" class="explore">Kager</a></li>
+                <li><a href="drinks.html" class="explore">Drinks</a></li>
+                <li><a href="./bestilling.html" class="aktuelleside">Bestilling</a></li>
+                <li><a href="omOs.html" class="explore">Om os</a></li>
+                <li><a href="kontakt.html" class="explore">Kontakt</a></li>
+            </ul>
                 <img src="./img/allPages/blomster/pinkblomst.png" alt="Lyserød blomsterpuket" id="blomster-pink">  
                 <img src="./img/allPages/blomster/hvidblomst.png" alt="Hvid blomstepuket" id="blomster-hvid">     
+                <h5>Cafè Le Jardin</h5> 
         </nav>
     </header>
    
@@ -54,7 +49,7 @@
     <main>
         <section>
             <h2>Drinks</h2>
-            <img src="./img/drinks/cafelejardinneonskilt.jpg" alt="neon cafeskilt med kage og coctail" width="100%">
+            <img src="./img/drinks/cafelejardinneonskilt.jpg" alt="neon cafeskilt med kage og coctail" id="banner">
 
         </section>
         <section>
@@ -64,6 +59,7 @@
         </section>
     </main>
 
+    <!--mainfooter starter-->
     <footer class="mainfooter">
         <div class="footerrow">
             <div class="flexbokse">
@@ -81,7 +77,7 @@
 
             <div class="flexbokse">
                 <h4> Instagram</h4>   
-                <!----insta billeder mangler-->
+                <!--insta billeder mangler-->
                 <!--Installer instagram feed her. Lena skal godkende Instagram Access Token, se: https://www.youtube.com/watch?v=0XQ3lLy3ymM&t=208s. Find koden her: https://github.com/ishithemes/instafeed_website/blob/master/index.html.-->
 
                 <img src="./img/allPages/instagramPosts.svg" alt="et dummi billede af instagram posts">
@@ -90,7 +86,7 @@
             </div>
 
             <div class="flexbokse">
-                <!----facebook andmeldenser-->
+                <!--facebook andmeldenser-->
                 <!--Lena skal give os adgang til at logge ind på developer facebook, følg denne vejledning, https://www.signpost.com/blog/embed-facebook-reviews/-->
                 <h4>Facebook anmeldelser</h4>
                 <img src="./img/allPages/facebookreviews.svg" alt="dummi billede facebook reviews">
@@ -110,11 +106,12 @@
                     <li>Lenathorsson@hotmail.com</li>
                 </ul>
                 <hr>
-                <!----Maps mangler-->
+                <!--Maps mangler-->
                 <!--Skal Laves i samarbejde med Lena, se vejledning https://www.youtube.com/watch?v=pL7_hCbwTHo-->
                 <h4>Google Maps</h4>
                 <img src="./img/allPages/maps.png" alt="dummi billede google maps position" id="maps">
-                <hr> 
+                <hr>
+                
             </div>
         </div>
         <nav>
@@ -126,10 +123,11 @@
         </nav>
     </footer>
 
+
     <footer class="mobilfooter">
         <a href="javascript:void(0);" onclick="infoFunktion()"><img src="./img/allPages/telefon.svg" alt="ring caféen op"></a>
         <span id="mobil-info">
-            <p>+45 31494600</p>
+            <a href="tel:±4531494600" target="_blank">+45 31494600</a>
         </span>
         <a href="javascript:void(0);" onclick="adresseFunktion()"><img src="./img/allPages/location.svg" alt="find caféens lokation"></a>
         <span id="lokation">
@@ -140,6 +138,5 @@
     </footer>
     
     <script src="./main.js"></script>
-
 </body>
 </html>
