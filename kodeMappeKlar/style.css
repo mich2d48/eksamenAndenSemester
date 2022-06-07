@@ -14,7 +14,7 @@ body {
     padding: 0;
     margin: 0;
     color: var(--Pink);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 /*Så fyldet starter under headeren*/
@@ -28,6 +28,10 @@ h2, h3{
     text-align:  center;
     font-size: 22px;
     text-transform: uppercase;
+}
+
+h2, h3, h4, h5 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /*Streger brugt gennem sidderne for at skabe en visuel opdeling*/
@@ -73,6 +77,11 @@ header h1 {
     position: fixed;
     top: -10px;
     left: 20px;
+}
+
+#logo-a-tag {
+    text-decoration: none;
+    color: var(--Pink);
 }
 
 /*Lagkage/burgerbar*/
@@ -402,7 +411,7 @@ label {
     }
 
     /*ting der ikke skal vises på denne skærm*/
-    #lagkageNav, header #navigation ul hr, h5, .mobilfooter {
+    #lagkageNav, header #navigation ul hr, h5, .mobilfooter, h2 {
         display: none;
     }
 
@@ -428,14 +437,6 @@ label {
     /*Navigation starter*/
     /*Til styling af navigationsbar er der brugt hjælp fra en video på youtube https://www.youtube.com/watch?v=oYRda7UtuhA*/
     /*Vi har dog lavet en del modificering af koden, så den passer ind i vores projekts*/
-    #navigation ul li {
-        margin: 0px 8px;
-        border-bottom: none;
-    }
-
-    #navigation ul li a{
-        font-size: 16px;
-    }
 
     #navigation {
         background-color: #cee6d300;
@@ -451,11 +452,14 @@ label {
         padding-bottom: 0px;
         padding-top: 0px;
         margin-right: 0px;
+        margin: 0px 8px;
+        border-bottom: none;
     }
 
     #navigation ul li a {
         color: var(--pink);
         position: relative;
+        font-size: 16px;
     }
 
     #navigation ul li .explore::after{
@@ -580,7 +584,13 @@ label {
     top: -280px;
     transform: scaleX(-1) rotate(45deg);
     }
+  }
 
+  @media screen and (min-width: 800px) {
+    #navigation ul li{
+        margin: 0px 2%;
+
+    }
   }
 
 
