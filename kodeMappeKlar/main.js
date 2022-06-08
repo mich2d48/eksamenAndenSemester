@@ -1,6 +1,8 @@
+//når du trykker på lagkagemenuen
 var lagkage = document.getElementById("navigation");
+//når du trykker på xe´t
 var luk = document.getElementById("luk");
-
+//selve funktionen
 function lagkageFunktion() {
     if (lagkage.style.display === "block") {
       lagkage.style.display = "none",luk.style.display = "none";
@@ -9,8 +11,9 @@ function lagkageFunktion() {
     }
   }
 
+//når du trykker på telefonikonet på fixed footer på mobilverion
   var mobil = document.getElementById("mobil-info")
-
+//funktionen dertil
   function infoFunktion() {
     if (mobil.style.display === "block") {
       mobil.style.display = "none";
@@ -19,8 +22,9 @@ function lagkageFunktion() {
     }
   }
 
+//når du trykker på lokationsikonet på fixed footer på mobilverion
   var lokation = document.getElementById("lokation")
-
+//funktionen dertil
   function  adresseFunktion() {
     if (lokation.style.display === "block") {
       lokation.style.display = "none";
